@@ -92,9 +92,31 @@ for (d of divs ){
 
 // Q14a
 
-avengers = ["Forever", "Fight", "As", "One", "AVENGERS", "ASSEMBLE!"];
+const avengers = ["Forever",
+ "Fight", 
+ "As", 
+ "One", 
+ "AVENGERS", 
+ "ASSEMBLE!"];
 
 // Q14b
+const newRay = document.createElement(`span`);
 
+function adding (a){
+    for(i=0; i<a.length; i++){
+        newRay.innerText += a[i]+ ` `;
+    }
+    body.append(newRay);
+}
+
+adding(avengers);
+
+//or 
+
+for (item of avengers){
+    const = newSpan = document.createElement(`span`);
+    newSpan.innerText = item;
+    body.insertAdjacentElement(`beforeend`, newSpan);
+}
 
 
